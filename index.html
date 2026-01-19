@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Coffee & Tea Vending System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Simple Coffee & Tea Vending System</h1>
+
+<div class="container">
+
+    <!-- SALES DETAILS -->
+    <div class="box">
+        <h2>Sales Details</h2>
+        <p>Total Tea Cups Sold: <span id="teaSold">0</span></p>
+        <p>Total Coffee Cups Sold: <span id="coffeeSold">0</span></p>
+        <p>Total Selling Amount: ₹<span id="totalSelling">0</span></p>
+        <p>Total Making Cost: ₹<span id="totalCost">0</span></p>
+        <p><b>Today's Profit: ₹<span id="profit">0</span></b></p>
+    </div>
+
+    <!-- CURRENT STOCK -->
+    <div class="box">
+        <h2>Current Stock</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+            <tr><td>Tea Powder</td><td id="teaStock"></td></tr>
+            <tr><td>Coffee Powder</td><td id="coffeeStock"></td></tr>
+            <tr><td>Sugar</td><td id="sugarStock"></td></tr>
+            <tr><td>Milk</td><td id="milkStock"></td></tr>
+            <tr><td>Cups</td><td id="cupStock"></td></tr>
+        </table>
+    </div>
+
+    <!-- SELL DRINK -->
+    <div class="box">
+        <h2>Sell Drink</h2>
+        <button onclick="sellDrink('tea', true)">Tea with Sugar</button>
+        <button onclick="sellDrink('tea', false)">Tea without Sugar</button>
+        <button onclick="sellDrink('coffee', true)">Coffee with Sugar</button>
+        <button onclick="sellDrink('coffee', false)">Coffee without Sugar</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
